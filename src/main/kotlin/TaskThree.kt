@@ -6,5 +6,6 @@ fun Vowels(s: String): String {
 
 fun main(){
     val text = "Учу КОТЛИН каждый день!"
+
     println(Vowels(text))
 }
