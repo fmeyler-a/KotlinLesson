@@ -1,11 +1,18 @@
-fun Vowels(s: String): String {
+import kotlin.text.iterator
 
-    val vowel = "аеёиоуАЕЁИОУ"
-    return s.filter { it in vowel }
+// Функция печатает только гласные из строки
+fun vowels(s: String): String {
+
+    val onlyVawels = "аоуэыяёеюиАОУЭЫЯЕЁЮИ"
+    for (i in s) {
+        if (i in onlyVawels) {
+            print(i)
+        }
+    }
+    return onlyVawels
 }
 
-fun main(){
+fun main() {
     val text = "Учу КОТЛИН каждый день!"
-
-    println(Vowels(text))
+    vowels(text)
 }
