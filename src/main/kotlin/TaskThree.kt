@@ -7,7 +7,6 @@ fun vowels(s: String): String {
             print(i)
         }
     }
-
     return onlyVawels
 }
 
