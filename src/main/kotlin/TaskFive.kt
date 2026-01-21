@@ -1,11 +1,11 @@
 fun main(){
-
+    val null1 = mergeStrings("Hello ", "World!")
+    println(null1)
 }
 
-fun nullCheck(a: String?, b: String?): String? {
-    return if (a != null && b != null) {
-        a + b
-    } else {
-        null
+fun mergeStrings(a: String?, b: String?): String? =
+    when {
+        a != null && b != null -> a + b
+        a != null -> a
+        else -> b
     }
-}
