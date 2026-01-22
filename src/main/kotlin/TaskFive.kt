@@ -3,12 +3,9 @@ fun main(){
     println(null1)
 }
 
-fun mergeStrings(a: String?, b: String?): String {
-    when {
-        a != null && b != null -> a + b
-        a != null -> a
-        else -> b
+fun mergeStrings(a: String?, b: String?): String? =
+    if (a != null && b != null) {
+        a + b
+    } else {
+        a ?: b
     }
-
-    return a + b
-}
